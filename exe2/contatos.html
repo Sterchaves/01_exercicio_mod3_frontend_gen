@@ -4,38 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
+
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 </head>
 <body>
     
-    <header>
+    <header class="cabecalho">
         <nav class="navegacao">
             <ul class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="contatos.html" >Contatos</a></li>
+                <li class="item"><a href="index.html">Home</a></li>
+                <li class="item"><a href="contatos.html" >Contatos</a></li>
             </ul>
         </nav>
-    </header><br><br>
+    </header>
 
 
     <main>
         <section class="contato" id="contato">
-            <h1 >Fale Conosco</h1> 
+            <h1 class="titulo">Fale Conosco</h1> 
             <form action="" class="formulario">
-                <label for="nome">Nome: </label> <br>
+                <label for="nome">Nome: </label> 
                 <input type="text" id="nome">
-                <br>
-                <label for="email">Email: </label> <br>
+                
+                <label for="email">Email: </label> 
                 <input type="text" id="email">
-                <br>
-                <label for="assunto">Assunto: </label> <br>
-                <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea><br>
+                
+                <label for="assunto">Assunto: </label> 
+                <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
         
                 <button>
                     ENVIAR
                 </button>
             </form> 
         </section>
-    </main> <br><br>
+    </main> 
 
 
 </body>
