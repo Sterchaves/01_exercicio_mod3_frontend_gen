@@ -24,8 +24,8 @@
 }
 
 .cabecalho .navegacao .menu .item a:hover{
-color: white;
-background-color: #1ED760;
+color: whitesmoke;
+background-color: #70D6FF;
 }
 
 @media(max-width:624px){
@@ -38,10 +38,237 @@ background-color: #1ED760;
     }
  }
 
+
  /* ARTIGOS */
 
+.artigos .artigo{
+    display: flexbox;
+    align-items: center;
+    padding: 0 10%;
+    background-color: #E63462;
+
+}
+
+.artigos .artigo .informacoes .titulo-art{
+    font-size: 40px;
+    color: #EEF5DB;
+    padding-bottom: 5%;
+    padding-top: 11%;
+}
+
+.artigos .artigo .informacoes .paragrafo{
+    font-size: 20px;
+    color: #EEF5DB;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-top: 11px;
+    padding-bottom: 15px;
+}
+
+
+.artigos .artigo .informacoes .paragrafo .btn-text{
+    font-size: 20px;
+    font-weight: 1000;
+    color: #EEF5DB;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-top: 11px;
+    padding-bottom: 15px;
+}
+
+
+/* BOTÃO CTA */
+.encomenda-cta{
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 7%;
+}
+
+.encomenda-cta .titulo-cta{
+    color: #EEF5DB;
+    font-size: 33px;
+    padding-bottom: 4%;
+    padding-top: 6%;
+    font-weight: 1000;
+}
+
+.encomenda-cta .btn-cta{
+    color: #000000;
+    background-color:#EEF5DB;
+    font-weight: 750;
+    font-size: 16px;
+    width: 40%;
+    height: 30%;
+    text-align: center;
+    line-height: 2.5;
+    border-radius: 33px;
+}
+
+
+/* VIDEOS */
+.videos-container {
+    text-align: center;
+    background-color: #333745;
+    padding-bottom: 7%;
+}
+
+.videos-container .titulo-vid {
+    padding-bottom: 20px;
+    padding-top: 10%;
+    font-size: 40px;
+    color: #EEF5DB;
+}
+
+.videos-container .video .titulo-art {
+    font-size: 20px;
+    padding-bottom: 10px;
+    padding-top: 30px;
+    color: #EEF5DB;
+}
+
+.videos-container .video {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.videos-container .video iframe {
+    max-width: 100%;
+}
+
+
+
+
  /* QUEM SOMOS */
+ .quem-somos{
+    background-color: #E63462;
+}
+
+.quem-somos .conteudo{
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+
+
+.quem-somos .conteudo .informacoes{
+    width: 48%;
+}
+
+.quem-somos .conteudo .imagem{
+    width: 60%;
+}
+
+.quem-somos .conteudo .informacoes .titulo{
+    font-size: 222%;
+    font-weight: 900;
+    color: #EEF5DB;
+    margin-bottom: 20px;
+    padding-top: 17%;
+}
+
+.quem-somos .conteudo .informacoes .texto{
+    font-size: 20px;
+    color: #EEF5DB;
+    line-height: 1.5;
+    font-weight: 400;
+    padding-bottom: 11%;
+}
+
+@media (max-width: 800px) {
+    .quem-somos .conteudo {
+        flex-direction: column; 
+    }
+
+    .quem-somos .conteudo .imagem {
+        width: 70%;  
+        margin-top: 0;  
+        margin-bottom: 5%; 
+    }
+}
+
 
  /*CONTATOS*/
 
+
+.contato {
+    background-color: #333745;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  .contato h1{
+    font-size: 400%;
+    color: #EEF5DB;
+    padding-bottom: 8%;
+  }
+  
+  .formulario {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  label, input, textarea {
+    display: block;
+    margin: 10px 0;
+    width: 100%;
+  }
+  
+  .botao {
+    background-color: #4285f4;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .botao:hover {
+    background-color: #357ae8;
+  }
+  
+
+
  /* RODAPE */
+
+ .rodape {
+    text-align: center;
+    background-color: #FE5F55;
+    padding-bottom: 5%;
+    
+ }
+
+
+
+ .rodape .endereco h1{
+font-size: 30px;
+font-weight: bold;
+padding-top: 3%;
+padding-bottom: 15px;
+color: #EEF5DB;
+ }
+
+ .rodape .endereco p{
+    font-size: 15px;
+    font-weight: 100;
+    padding-bottom: 15px;
+    color: #EEF5DB;
+
+ }
+
+ .rodape .mapa{
+    width: 60%;
+ }
