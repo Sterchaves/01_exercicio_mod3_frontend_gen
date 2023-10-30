@@ -22,17 +22,20 @@
     <main>
         <section class="contato" id="contato">
             <h1>Fale Conosco</h1> 
-            <form action="" class="formulario">
+            <form action="" class="formulario" id="formulario">
                 <label for="nome">Nome: </label> 
-                <input type="text" id="nome">
-                
+                <input type="text" id="nome" onkeyup="validaNome()">
+                <div id="txtNome"></div>
+
                 <label for="email">Email: </label> 
-                <input type="text" id="email">
-                
+                <input type="text" id="email" onkeyup="validaEmail()">
+                <div id="txtEmail"></div>
+
                 <label for="assunto">Assunto: </label> 
-                <textarea name="assunto" id="assunto" cols="30" rows="5"></textarea>
-        
-                <button class="botao">
+                <textarea name="assunto" id="assunto" cols="30" rows="5" onkeyup="validaAssunto()"></textarea>
+                <div id="txtAssunto"></div>
+
+                <button class="botao" id="botao" onclick="enviar()">
                     ENVIAR
                 </button>
             </form> 
@@ -40,13 +43,14 @@
     </main> 
 
     <footer class="rodape">
-        <section class="endereco">
+        <section class="endereco" id="endereco">
             <h1>Endereço</h1> 
             <p>Estr. do Magarça - Guaratiba</p> 
             <p>Rio de Janeiro - RJ</p> 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0061857522987!2d-43.60538132171685!3d-22.94999930465914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be5602067cc63%3A0xb3fc68e0978663d3!2sHorto%20Santa%20Clara!5e0!3m2!1spt-BR!2sbr!4v1698244584727!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>     
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3674.0061857522987!2d-43.60538132171685!3d-22.94999930465914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9be5602067cc63%3A0xb3fc68e0978663d3!2sHorto%20Santa%20Clara!5e0!3m2!1spt-BR!2sbr!4v1698244584727!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="mapa" onmousemove="mapaZoom()" onmouseout="mapaNormal"></iframe>     
         </section>
     </footer>
 
+    <script src="../verificacao-aula/script.js"></script>
 </body>
 </html>
